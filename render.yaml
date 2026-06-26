@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: safari-en
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: OWNER_NUMBER
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: WEATHER_API_KEY
+        sync: false
